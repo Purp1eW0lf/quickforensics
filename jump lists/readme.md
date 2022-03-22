@@ -1,14 +1,19 @@
 # Jump Lists
 
 
-Quick way
+## Quick and stupid way
 ```
- strings C:\Users\Frank\AppData\Roaming\Microsoft\Windows\Recent\AutomaticDestinations\* |sort
- ```
+strings C:\Users\Frank\AppData\Roaming\Microsoft\Windows\Recent\AutomaticDestinations\* |sort
+```
  
+## Right way
  
- Right way
- 
+Copy all related items
+```powershell
+copy-item C:\Users\*\AppData\Roaming\Microsoft\Windows\Recent\AutomaticDestinations\ . -recurse -verbose ```
+```
+
+Then use Eric's tool
 
 ```powershell
 #install
@@ -20,7 +25,7 @@ ls JLECmd.exe
 .\JLECmd.exe -d .\jump\ --all --mp --withDir --csv ./
 
 #read the csv with selective headers
-Import-Csv .\20220322131011_AutomaticDestinations.csv | 
+Import-Csv .\*.csv | 
 select TargetIDAbsolutePath,InteractionCount,CreationTime,LastModified,TargetCreated,Targetmodified,TargetAccessed | 
 sort InteractionCount -desc
 ```

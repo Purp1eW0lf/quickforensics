@@ -11,8 +11,8 @@ Eric Zimmerman has released some amazing digital forensics tools for the communi
 
 For our case, we are using his PECMD.exe, which will parse the prefetch file and offer us more data
 
-```powershell
 Install
+```powershell
 # Click link about to download, or use the following PowerShell
 wget -usebasicparsing https://f001.backblazeb2.com/file/EricZimmermanTools/PECmd.zip -outfile PECmd.zip ; 
 Expand-Archive ./PECmd.zip . ; 

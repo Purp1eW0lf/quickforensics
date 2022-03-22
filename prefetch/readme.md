@@ -5,6 +5,14 @@ Prefetch (also known as prefetcher) is a caching technique whereby an applicatio
 ## Where is Prefetch
 `C:\Windows\Prefetch\x.pf`
 
+Is totally absent on Windows SERVERS. Enable with the following
+```powershell
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters" /v EnablePrefetcher /t REG_DWORD /d 3 /f;
+reg add "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Prefetcher" /v MaxPrefetchFiles /t REG_DWORD /d 8192 /f;
+Enable-MMAgent –OperationAPI;
+net start sysmain
+```
+
 ## Leveraging Prefetch
 
 Eric Zimmerman has released some amazing digital forensics tools for the community.

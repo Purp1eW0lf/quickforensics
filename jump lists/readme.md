@@ -1,12 +1,23 @@
 # Jump Lists
 
+## To Prepare
+Open up some files like you have GUI access
 
-## Quick and stupid way
+```powershell
+echo 'test data' >> example_file.ps1
+notepad example_file.ps1
+```
+
+## To investigate
+
+Two ways
+
+### Quick and stupid way, my favourite
 ```
 strings C:\Users\Frank\AppData\Roaming\Microsoft\Windows\Recent\AutomaticDestinations\* |sort
 ```
  
-## Right way
+### Right way
  
 Copy all related items
 ```powershell

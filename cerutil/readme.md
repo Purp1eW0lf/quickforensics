@@ -11,11 +11,12 @@ certutil.exe -urlcache -split -f https://raw.githubusercontent.com/PowerShellMaf
 ## To investigate
 
 Go looking for what's going on there
-```
+```powershell
 certutil.exe -urlcache | 
 select-string  -Pattern 'ocsp|wininet|winhttp|complete|update|r3'  -NotMatch | 
 sort
 ```
+
 <img width="821" alt="image" src="https://user-images.githubusercontent.com/44196051/171147357-ece409d0-a658-4340-985f-aac58d5f3c14.png">
 
 ## Example output

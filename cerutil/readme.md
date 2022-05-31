@@ -29,6 +29,10 @@ sort
 If we look in ProcMon, there's an interesting record of certutil activity
 <img width="995" alt="image" src="https://user-images.githubusercontent.com/44196051/171152150-8feb0a03-a1e5-424e-aa6a-0333a41d9012.png">
 
+```
+C:\Users\*\AppData\LocalLow\Microsoft\CryptnetUrlCache\MetaData\
+```
+
 Looking ourselves, we find some files that do not explain themselves
 
 <img width="1082" alt="image" src="https://user-images.githubusercontent.com/44196051/171152822-78f62dc2-7352-4ec4-9ef9-c3bbc669040e.png">
@@ -36,5 +40,3 @@ Looking ourselves, we find some files that do not explain themselves
 However, if we collected and then `STRINGS` these files, we'd see a breakdown of the cerutil activity
 
 <img width="1410" alt="image" src="https://user-images.githubusercontent.com/44196051/171153422-e32c74b5-b088-4e52-bdb0-478023dd843e.png">
-
-

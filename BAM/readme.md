@@ -5,7 +5,7 @@ Fire up calc!
 
 ```powershell
 calc.exe
-
+```
 ## To invesigate
 
 Two options

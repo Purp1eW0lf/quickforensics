@@ -4,6 +4,10 @@
 
 `bitsadmin /create 1 bitsadmin /addfile 1 https://github.com/BloodHoundAD/SharpHound/releases/download/v1.0.3/SharpHound-v1.0.3.zip c:\SharpHound-v1.0.3.zip bitsadmin /RESUME 1 bitsadmin /complete 1`
 
+OR
+
+`Import-Module BitsTransfer; Start-BitsTransfer -Source https://github.com/BloodHoundAD/SharpHound/releases/download/v1.0.3/SharpHound-v1.0.3.zip -Destination c:\SharpHound-v1.0.3.zip`
+
 ## To Investigate
 
 ## Example Output

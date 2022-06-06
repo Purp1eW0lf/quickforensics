@@ -7,6 +7,9 @@ wget -useb https://gist.githubusercontent.com/Purp1eW0lf/e0b757e66d5da629c1d03e2
 ```
 <img width="700" alt="image" src="https://user-images.githubusercontent.com/44196051/171155030-0c4219f5-1782-4c16-bef2-eaa08ed0b6f8.png">ii 
 
+Pull chainsaw binary
+https://github.com/countercept/chainsaw/releases/tag/v1.1.7
+
 # Chainsaw
 
 ```bash

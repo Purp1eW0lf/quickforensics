@@ -25,3 +25,9 @@ Usage
 ```powershell
 .\PECmd.exe -f ./*.pf -mp
 ```
+```
+![image](https://user-images.githubusercontent.com/44196051/172607545-2d821d38-9f11-438f-a070-79043794f8a9.png)
+
+![image](https://user-images.githubusercontent.com/44196051/172607585-5424879a-e62e-41b1-87b6-3a14936fcc97.png)
+
+![image](https://user-images.githubusercontent.com/44196051/172607611-c28440a9-1e6f-4bdc-bb91-3e9cf5e4b536.png)

@@ -17,3 +17,5 @@ sqlite3 [history file]
 .mode line
 select * from downloads;
 ```
+
+![image](https://user-images.githubusercontent.com/44196051/172607409-5e5874bf-90ea-4182-a3ba-334d7279047b.png)
